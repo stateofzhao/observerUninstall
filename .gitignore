@@ -1,0 +1,15 @@
+/local.properties
+.DS_Store
+
+# Android Studio
+*.iml
+.idea
+
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+/build
+
+#NDK
+obj/
+
+#以上规则来自：http://stackoverflow.com/questions/16736856/what-should-be-in-my-gitignore-for-an-android-studio-project
