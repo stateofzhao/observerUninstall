@@ -398,9 +398,9 @@ JNIEXPORT jint JNICALL Java_com_diagramsj_test_jniclass_ObserverUninstall_update
 
 jint JNI_OnLoad(JavaVM *vm, void *reserved) {
     void *venv;
-    LOGI("dufresne----->JNI_OnLoad!");
+    LOGI("JNI_OnLoad() %s","dufresne----->JNI_OnLoad!");
     if ((*vm)->GetEnv(vm, (void **) &venv, JNI_VERSION_1_4) != JNI_OK) {
-        LOGE("dufresne--->ERROR: GetEnv failed");
+        LOGE("JNI_OnLoad() %s","dufresne--->ERROR: GetEnv failed");
         return -1;
     }
     return JNI_VERSION_1_4;
